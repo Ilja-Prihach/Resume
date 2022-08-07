@@ -8,4 +8,8 @@ hamburger.addEventListener('click', () => {
       
 closeElem.addEventListener('click', () => {
     menu.classList.remove('active');
- })            
+ })    
+ 
+ counters.forEach( (item, i) => {
+   lines[i].style.width = item.innerHTML;
+});
